@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gunde pariksha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+<body >
+    <span style = "color:red">&#10084;</span>
+    I <span> &#x1F49A;</span> you.
+    <i onclick ="like() " class="fa fa-thumbs-up"></i><span id ="tup">10</span>
+    <i onclick= "dislike()" class="fa fa-thumbs-down"></i><span id="tdown">0</span>
+    <i onclick="like1()" class="fa fa-thumbs-o-up"></i><span id="tup1">&#x1F49A;</span><span id ="chg">0</span>
+   
+   <script>
+       var tup_v=10;
+       var tdown_v=0;
+       
+
+    function like(){
+        tup_v=tup_v +1 ;
+        document.getElementById("tup").innerHTML=tup_v;
+                
+    }
+            
+       function dislike(){
+        tdown_v++;
+        document.getElementById("tdown").innerHTML=tdown_v;
+    }
+   </script> 
+   <div>
+       <script>
+           var tchg= '&#x1F49B';
+           var tchg1= '&#x1F49A';
+           var chg1= 10;
+        function like1(){
+          chg1++;
+
+           if (chg1%2 == 0  ) {          
+           document.getElementById("tup1").innerHTML=tchg;
+           document.getElementById("chg").innerHTML =chg1;
+           }else {
+            document.getElementById("tup1").innerHTML=tchg1;
+            document.getElementById("chg").innerHTML =chg1; 
+           }
+        
+            }
+       </script>
+   </div>
+</body>
+</html>

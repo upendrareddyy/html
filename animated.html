@@ -1,0 +1,31 @@
+<html>
+<head>
+  <style>
+  div {
+    animation-duration: 2000ms;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    background-color: gray;
+  }
+  @keyframes slide {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    
+  }
+  </style>
+</head>
+<body>
+  <div>I am a strange root.</div>
+  <div style="transform: rotateY(30deg) rotateX(-30deg); width: 200px;">
+    I am a strange root.
+  </div>
+</body>
+</html>
